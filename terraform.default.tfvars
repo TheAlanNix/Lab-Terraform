@@ -13,6 +13,9 @@ instance_key_name = "key_name"
 instance_key_path = "key/path/here.pem"
 instance_username = "username"
 
+// DNS Zone
+dns_zone = "example.com"
+
 // Lacework Agent Access Token
 lacework_access_token = ""
 

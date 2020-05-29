@@ -1,4 +1,4 @@
-# Lab Terraform
+# Lab Terraform for AWS
 
 This is a Terraform template for building a lab environment in AWS.
 

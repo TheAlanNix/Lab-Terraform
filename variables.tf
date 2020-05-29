@@ -2,6 +2,9 @@ data "aws_availability_zones" "available" {}
 variable "availability_zone_count" {
   default = 1
 }
+variable "dns_zone" {
+  default = ""
+}
 variable "instance_ami" {}
 variable "instance_key_name" {}
 variable "instance_key_path" {}
