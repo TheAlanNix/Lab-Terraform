@@ -28,7 +28,7 @@ https://learn.hashicorp.com/terraform#getting-started
 ## How-to Run
 
 1. Set up the configuration parameters in the **[terraform.tfvars](terraform.tfvars)** file.
-    - Configuration variables and their default values are described [here](#configuration-variables).
+    - Configuration variables and their default values are described [here](#configuration-parameters).
 2. Initialize Terraform by running `terraform init` from the root directory of this repository.
 3. Verify the Terraform configuration by running `terraform plan` to preview the changes that will be made.
 4. Once verified, simply run `terraform apply` to deploy your infrastructure.
