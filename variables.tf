@@ -21,5 +21,5 @@ variable "region" {
 }
 variable "vpc_name" {}
 variable "vpc_subnet" {
-  default = "10.150.0.0/24"
+  default = "10.150.0.0/16"
 }

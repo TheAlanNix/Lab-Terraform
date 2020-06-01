@@ -21,4 +21,3 @@ lacework_access_token = ""
 
 // VPC Configuration
 vpc_name = "Lab"
-vpc_subnet = "10.150.0.0/16"
