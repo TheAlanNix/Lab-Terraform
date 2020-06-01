@@ -25,14 +25,17 @@ Once you've configured your AWS credentials file, you'll need to install Terrafo
 
 https://learn.hashicorp.com/terraform#getting-started
 
-## How-to Run
+## How to Run
 
-1. Set up the configuration parameters in the **[terraform.tfvars](terraform.tfvars)** file.
+1. Copy/move the **terraform.default.tfvars** file to **terraform.tfvars**
+    - `cp terraform.default.tfvars terraform.tfvars`
+2. Set up the configuration parameters in the **terraform.tfvars** file.
     - Configuration variables and their default values are described [here](#configuration-parameters).
-2. Initialize Terraform by running `terraform init` from the root directory of this repository.
-3. Verify the Terraform configuration by running `terraform plan` to preview the changes that will be made.
-4. Once verified, simply run `terraform apply` to deploy your infrastructure.
-5. During deployment, a config.json and inventory.cfg file will be created in the ansible directory.  These can be used to run Ansible playbooks to provision the instances.
+3. Initialize Terraform by running the following from the root directory of this repository:
+    - `terraform init`
+4. To review, verify, and deploy configuration changes, run the following:
+    - `terraform apply`
+5. During deployment, a **config.json** and **inventory.cfg** file will be created in the ansible directory.  These can be used to run Ansible playbooks to provision the deployed EC2 instances.
 
 Once Terraform deploys the infrastructure, you can provision software/configuration using Ansible.  The Ansible command will be similar to below:
 
